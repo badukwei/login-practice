@@ -1,0 +1,31 @@
+<div>
+  <form role="form" #formRef="ngForm" [formGroup]="form" (ngSubmit)="login()">
+    <div>
+      <input
+        type="email"
+        placeholder="Email"
+        aria-label="Email"
+        formControlName="email"
+      />
+    </div>
+    <div>
+      <input
+        type="account"
+        placeholder="Account"
+        aria-label="Account"
+        formControlName="account"
+      />
+    </div>
+    <div>
+      <input
+        type="password"
+        placeholder="Password"
+        aria-label="password"
+        formControlName="password"
+      />
+    </div>
+    <div>
+      <button type="submit">Log In</button>
+    </div>
+  </form>
+</div>
